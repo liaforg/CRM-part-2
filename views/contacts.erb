@@ -1,0 +1,21 @@
+<!DOCTYPE htm>
+  <html>
+
+  <head>
+      <title>CRM Page</title>
+  </head>
+
+    <body>
+
+      <h1>Welcome to my CRM page!</h1>
+      <h2> Contacts</h2>
+
+      <ul>
+        <% @contacts.each do |contact| %>
+        <li> <%= contact.first_name %> <%= contact.last_name%> -> <%= contact.email%> -> <%= contact.note%></li>
+        <% end %>
+      </ul>
+
+    </body>
+
+  </html>
