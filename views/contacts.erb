@@ -7,14 +7,16 @@
 
     <body>
 
-      <h1>Welcome to my CRM page!</h1>
-      <h2> Contacts</h2>
+      <h1><font size="8" color="purple">CRM Page!</font></h1>
+      <h2><font size="5" color="green">Contacts</font></h2>
 
       <ul>
         <% @contacts.each do |contact| %>
-        <li> <%= contact.first_name %> <%= contact.last_name%> -> <%= contact.email%> -> <%= contact.note%></li>
+        <li> <%= contact.first_name %> <%= contact.last_name%> ->  <%= contact.email%> ->  <%= contact.note%></li>
         <% end %>
       </ul>
+
+    <h4><font size="3" color="aqua"> Click <a href='http://localhost:4567/home'> here </a> to go back to homepage!</font></h2>
 
     </body>
 

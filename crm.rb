@@ -6,18 +6,16 @@ get '/' do
   redirect to('/home')
 end
 
+
 get '/home' do
-  erb :index
+    erb :index
 end
+
 
 get '/contacts' do
   @contacts = Contact.all
   erb :contacts
 end
-
-
-
-
 
 
 after do
