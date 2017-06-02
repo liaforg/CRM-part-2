@@ -5,8 +5,8 @@
 
 
         <% @contacts.each do |contact| %>
-        <p>
-          <%= contact.first_name %> <%= contact.last_name%> (<%= contact.email%>)
-          <h5>Edit | Delete</h5>
-          <% end %>
-        </p>
+          <p>
+            <%= contact.first_name %> <%= contact.last_name%> (<%= contact.email%>)
+            <h5><a href="/contacts/<%=contact.id%>">Edit</a> | <a href="#">Delete</a></h5>
+          </p>
+        <% end %>

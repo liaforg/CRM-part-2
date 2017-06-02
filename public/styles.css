@@ -64,7 +64,7 @@ u {
 p {
   color: black;
   background-color: #1abbbf;
-  
+
   margin: auto;
   max-width: 1200px;
   font-weight: bold;
@@ -82,6 +82,25 @@ h5 {
   font-weight: bold;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+
+h5 a{
+  color: blue;
+  text-decoration: none;
+}
+
+div.name {
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+div.name h3 {
+  color: #f05353;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 15px;
 }
 
 
