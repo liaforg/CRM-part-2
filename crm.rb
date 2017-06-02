@@ -9,7 +9,7 @@ end
 
 
 get '/home' do
-    erb :index
+    erb :contacts
 end
 
 

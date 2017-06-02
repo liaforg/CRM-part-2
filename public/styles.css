@@ -46,6 +46,12 @@ nav a{
   border: solid white 1px;
 }
 
+nav a:hover{
+  color: orange;
+  background-color: white;
+  font-weight:bolder;
+}
+
 h2 {
   color: black;
   background-color: #f05353;
@@ -87,6 +93,11 @@ h5 {
 h5 a{
   color: blue;
   text-decoration: none;
+}
+h5 a:hover{
+color: orange;
+background-color: white;
+font-weight:bolder;
 }
 
 div.name {
