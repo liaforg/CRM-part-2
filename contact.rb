@@ -10,7 +10,7 @@ class Contact < ActiveRecord::Base
 field :first_name, as: :string
 field :last_name,  as: :string
 field :email,      as: :string
-field :note,       as: :text
+# field :note,       as: :text
 
   def full_name
     "#{first_name} #{last_name}"
@@ -20,11 +20,11 @@ end
 
 Contact.auto_upgrade!
 
-# new_contact = Contact.create(first_name: 'Lia', last_name: 'Forg', email: 'email', note: 'note')
-# new_contact = Contact.create(first_name: 'Bia', last_name: 'Gorg', email: 'email', note: 'note')
-# new_contact = Contact.create(first_name: 'Cia', last_name: 'Horg', email: 'email', note: 'note')
-# new_contact = Contact.create(first_name: 'Dia', last_name: 'Iorg', email: 'email', note: 'note')
-# new_contact = Contact.create(first_name: 'Fia', last_name: 'Jorg', email: 'email', note: 'note')
+# new_contact = Contact.create(first_name: 'Marty', last_name: 'McFly', email: 'mart@mcfly.com')
+# new_contact = Contact.create(first_name: 'George', last_name: 'McFly', email: 'george@mcfly.com')
+# new_contact = Contact.create(first_name: 'Lorraine', last_name: 'McFly', email: 'lorraine@mcfly.com')
+# new_contact = Contact.create(first_name: 'Biff', last_name: 'Tannen', email: 'biff@tannen.com')
+# new_contact = Contact.create(first_name: 'Doc', last_name: 'Brown', email: 'doc@brown.com')
 
   # attr_accessor :first_name, :last_name, :email, :note
   # attr_reader :id

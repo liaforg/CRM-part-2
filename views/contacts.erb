@@ -1,23 +1,12 @@
-<!DOCTYPE htm>
-  <html>
 
-  <head>
-      <title>CRM Page</title>
-  </head>
+      <h2>
+          There are <u><%=Contact.count%></u> contacts
+      </h2>
 
-    <body>
 
-      <h1><font size="8" color="purple">CRM Page!</font></h1>
-      <h2><font size="5" color="green">Contacts</font></h2>
-
-      <ul>
         <% @contacts.each do |contact| %>
-        <li> <%= contact.first_name %> <%= contact.last_name%> ->  <%= contact.email%> ->  <%= contact.note%></li>
-        <% end %>
-      </ul>
-
-    <h4><font size="3" color="aqua"> Click <a href='http://localhost:4567/home'> here </a> to go back to homepage!</font></h2>
-
-    </body>
-
-  </html>
+        <p>
+          <%= contact.first_name %> <%= contact.last_name%> (<%= contact.email%>)
+          <h5>Edit | Delete</h5>
+          <% end %>
+        </p>
