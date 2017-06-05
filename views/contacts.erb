@@ -1,12 +1,11 @@
+<h2>
+  There are <u><%=Contact.count%></u> contacts
+</h2>
 
-      <h2>
-          There are <u><%=Contact.count%></u> contacts
-      </h2>
 
-
-        <% @contacts.each do |contact| %>
-          <p>
-            <a href=/contacts/<%=contact.id%>> <%= contact.full_name%> </a>(<%= contact.email%>)
-            <h5><a href=/contacts/<%=contact.id%>/edit>Edit</a> | <a href=/contacts/<%=contact.id%>/delete>Delete</a></h5>
-          </p>
-        <% end %>
+<% @contacts.each do |contact| %>
+  <p>
+    <a href=/contacts/<%=contact.id %>><%=contact.full_name%></a> (<%= contact.email %>)
+    <h5><a href=/contacts/<%=contact.id %>/edit>Edit</a> | <a href=/contacts/<%=contact.id%>/delete>Delete</a></h5>
+  </p>
+<% end %>

@@ -73,7 +73,6 @@ put '/contacts/:id' do
   end
 end
 
-# /contacts/83/delete
 get '/contacts/:id/delete' do
   @contact = Contact.find_by(params[:id].to_i)
   erb :delete
