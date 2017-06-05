@@ -16,19 +16,24 @@ end
 get '/contacts' do
   @contacts = Contact.count
   @contacts = Contact.all
-  puts params
   erb :contacts
 end
 
-get '/contacts/add_contact' do
-  erb :add_contact
-end
 
 get '/contacts/add_contact' do
-    @contact = Contact.create(params[:contact])
+    @contact = Contact.create
     erb :add_contact
 end
 
+post '/contacts' do
+  Contact.create(
+    first_name: params[:first_name],
+    last_name:  params[:last_name],
+    email:      params[:email],
+    note:       params[:note]
+  )
+  redirect to('/contacts')
+end
 
 get '/contacts/:id' do
   # params[:id] contains the id from the URL
@@ -44,7 +49,6 @@ end
 get '/contacts/about' do
   erb :about
 end
-
 
 
 
