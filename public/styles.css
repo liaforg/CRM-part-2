@@ -78,6 +78,11 @@ p {
   padding-left: 15px;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 h5 {
   color: blue;
   background-color: #1abbbf;
@@ -114,6 +119,28 @@ div.name h3 {
   margin-top: 15px;
 }
 
+form {
+  width: 80%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  font-size: 25px;
+  margin-left: auto;
+  background-color: #dddddd;
+}
+
+input[type="submit"]{
+    font-size: 20px;
+    margin-left: 45%
+}
+
+input[type="submit"]:hover{
+  font-size: 20px;
+  background-color: #00c2dd;
+  colour: white;
+}
 
 footer {
   color: white;

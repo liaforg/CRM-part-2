@@ -1,9 +1,25 @@
 <h2>Add a new contact</h2>
 
 <form action='/contacts' method='post'>
-  <input type='text' name='first_name'>
-  <input type='text' name='last_name'>
-  <input type='text' name='email'>
-  <input type='text' name='note'>
-  <input type='submit' value='New Contact'>
+  <label for = "first_name">
+    <span> First Name: </span>
+    <input type='text' name='first_name'>
+  <label>
+    <br>
+  <label for = "last_name">
+    <span> Last Name: </span>
+      <input type='text' name='last_name'>
+  </label>
+  <br>
+  <label for = "email">
+    <span> Email: </span>
+    <input type='text' name='email'>
+  </label>
+  <br>
+  <label for ="note">
+    <span> Notes: </span>
+      <input type='text' name='note'>
+  </label>
+  <br>
+      <input type='submit' value='New Contact'>
 </form>
